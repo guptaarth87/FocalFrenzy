@@ -1,0 +1,28 @@
+package com.javaweb.focalfrenzy.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+@Table(name = "CUSTOMER_TBL")
+
+public class Customer {
+    @Id
+    @GeneratedValue
+    private int id;
+    private String name;
+    private String date;
+    private String email;
+    private String mobileno;
+    private String service;
+    private Double price;
+    private String paymentstatus;
+}
